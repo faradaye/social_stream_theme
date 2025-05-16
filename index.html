@@ -64,17 +64,21 @@
 
 	.source-icon {
             height: 1em;
-            margin-right: 0px; /* Space between icon and username */
+            margin-right: 5px; /* Space between icon and username */
             vertical-align: middle;
         }
 
-        .badge {
-            height: 1em;
-            vertical-align: middle;
-            margin-left: 0px;
+       .badges, .badge {
+            display: inline-flex; /* Ensure badges are laid out horizontally */
+            align-items: center;
+            gap: 5px; /* Space between badges */
         }
-		.badges {
-			margin-left: 10px;
+
+        .badge {
+            height: 0.9em;
+            width: auto; /* Auto width to maintain aspect ratio */
+            vertical-align: middle;
+            margin-top: -2px; /* Move each badge up slightly */
         }
 
 		.message {
