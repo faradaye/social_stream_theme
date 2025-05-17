@@ -169,15 +169,11 @@
 
 		let chatbadges = "";
 		if (data.chatbadges) {
-			data.chatbadges.slice(0, 2).forEach(badge => {
-				if (typeof badge === "object") {
-					if (badge.type === "img" && badge.src) {
-						chatbadges += `<img class='badge' src='${badge.src}' />`;
-					} else if (badge.type === "svg" && badge.html) {
-						chatbadges += `<span class='badge svg'>${badge.html}</span>`;
-					}
-				} else {
-					chatbadges += `<img class='badge' src='${badge}' />`;
+			data.chatbadges.slice(0, 1).forEach(badge => {
+				if (typeof badge === "object" && badge.type === "img" && badge.src) {
+					chatbadges += `<img class='badge' src='${badge.src}' />`;
+				} else if (badge.type === "svg" && badge.html) {
+					chatbadges += `<span class='badge svg'>${badge.html}</span>`;
 				}
 			});
 		}
