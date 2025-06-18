@@ -96,7 +96,7 @@
 		}
 
         .text {
-            font-size: clamp(0.85em, 2.5vw, 1em);
+            font-size: clamp(0.85em, 2.5vw, 1.3em);
             line-height: 1.4;
 			word-break: break-word;
         }
@@ -107,7 +107,7 @@
 		
 		#chat-container {
 			padding: 0;
-			max-width: 350px;
+			max-width: 500px;
 			margin: auto;
 			max-height: 100vh;
 			overflow-y: auto;
@@ -207,7 +207,7 @@
 		}
 
 		// Handle removal after 10 seconds
-		/*setTimeout(() => {
+		setTimeout(() => {
 			messageContainer.classList.add('removing');
 			
 			// Remove from DOM after transition completes
@@ -216,7 +216,7 @@
 					messageContainer.parentNode.removeChild(messageContainer);
 				}
 			}, 500); // Match the transition duration
-		}, 10000);*/
+		}, 10000);
 	}
 
     // Initialize iframe for Social Stream Ninja
